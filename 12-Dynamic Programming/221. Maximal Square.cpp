@@ -28,7 +28,8 @@ public:
                 }
                 ans = max(ans,curr[j]);
             }
-            prev = curr;
+            fill(prev.begin(),prev.end(),0);
+            swap(prev,curr);
         }
         
         return ans * ans;
